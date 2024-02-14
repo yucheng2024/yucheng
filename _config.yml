@@ -60,7 +60,7 @@ plugins:
 author:
   name   : "Yucheng Xie"
   avatar : "/assets/images/selfie.jpg"
-  bio    : "Visiting Assistant Professor."
+  bio    : "Visiting Assistant Professor"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
