@@ -61,7 +61,7 @@ plugins:
 author:
   name   : "Yucheng Xie"
   avatar : "/assets/images/selfie.jpeg"
-  bio    : "Visiting Assistant Professor"
+  bio    : "Assistant Professor at Yeshiva University"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
