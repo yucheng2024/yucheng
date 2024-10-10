@@ -35,3 +35,24 @@ ul, li {
 section {
     margin-bottom: 2em; /* 减少每个 section 底部的间距 */
 }
+
+ul.compact-menu {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+ul.compact-menu li {
+    margin-right: 15px; /* Space between items */
+}
+
+ul.compact-menu li::after {
+    content: "|";
+    margin-left: 15px;
+}
+
+ul.compact-menu li:last-child::after {
+    content: "";
+}
