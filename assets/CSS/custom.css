@@ -13,3 +13,25 @@ h2 {
 p {
     font-size: 18px;
 }
+
+
+body {
+    line-height: 1.2; /* 默认是1.5，减小这个值来减少行距 */
+}
+
+p {
+    margin: 0.5em 0; /* 默认可能是1em，减小它来减少段落间距 */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0.5em 0; /* 调整标题上下的间距 */
+}
+
+ul, li {
+    margin: 0.2em 0; /* 减少列表项之间的间距 */
+    padding: 0;
+}
+
+section {
+    margin-bottom: 1em; /* 减少每个 section 底部的间距 */
+}
