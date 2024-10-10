@@ -35,3 +35,13 @@ ul, li {
 section {
     margin-bottom: 2em; /* 减少每个 section 底部的间距 */
 }
+
+.container {
+    max-width: 1200px; /* Increase the width */
+    margin: 0 auto;    /* Keep it centered */
+}
+
+img.profile-picture {
+    width: 150px; /* Increase the width to make it larger */
+    height: auto; /* Maintain aspect ratio */
+}
