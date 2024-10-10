@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 
 ul, li {
     margin: 0.8em 0; /* 减少列表项之间的间距 */
-    padding: 0;
+    padding: 0.1em;
 }
 
 section {
