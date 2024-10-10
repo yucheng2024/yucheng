@@ -37,9 +37,10 @@ section {
 }
 
 .container {
-    max-width: 1200px; /* Increase the width */
-    margin: 0 auto;    /* Keep it centered */
+    max-width: 2400px; /* Adjust this value to make the page wider */
+    margin: 0 auto;
 }
+
 
 img.profile-picture {
     width: 150px; /* Increase the width to make it larger */
