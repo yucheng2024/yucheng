@@ -35,14 +35,3 @@ ul, li {
 section {
     margin-bottom: 2em; /* 减少每个 section 底部的间距 */
 }
-
-.container {
-    max-width: 2400px; /* Adjust this value to make the page wider */
-    margin: 0 auto;
-}
-
-
-img.profile-picture {
-    width: 150px; /* Increase the width to make it larger */
-    height: auto; /* Maintain aspect ratio */
-}
