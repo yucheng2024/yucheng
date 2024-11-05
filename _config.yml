@@ -63,7 +63,7 @@ author:
   avatar : "/assets/images/Yucheng Xie-5.png"
   bio    : "Assistant Professor at Yeshiva University"
   links:
-    - label: "Website"
+    - label: "Official Website"
       icon: "fas fa-fw fa-link"
       url: "https://www.yu.edu/faculty/pages/xie-yucheng"
     - label: "Google Scholar"
