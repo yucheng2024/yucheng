@@ -67,12 +67,13 @@ author:
     - label: "ORCID"
       icon: "fab fa-fw fa-orcid"
       url: "https://orcid.org/0000-0001-5830-6625"
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:yucheng.xie@yu.edu"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/yucheng-xie-083763142/"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:yucheng.xie@yu.edu"
+
 
 # footer:
 #   links:
