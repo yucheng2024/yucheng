@@ -556,6 +556,37 @@ section {
 /* Minimal Mistakes uses .h-card with table-cell children on mobile.
    Override that layout explicitly so the sidebar renders as a compact card. */
 @media (max-width: 900px) {
+    .page__content p,
+    .page__content li {
+        font-size: 0.85rem !important;
+        line-height: 1.62 !important;
+    }
+
+    .faculty-hero__lead {
+        font-size: 0.89rem !important;
+        line-height: 1.56 !important;
+    }
+
+    .quick-links a {
+        font-size: 0.86rem !important;
+    }
+
+    .cv-item__header h3 {
+        font-size: 0.94rem !important;
+    }
+
+    .cv-item__header span {
+        font-size: 0.75rem !important;
+    }
+
+    .cv-item p {
+        font-size: 0.84rem !important;
+    }
+
+    .keyword-list span {
+        font-size: 0.75rem !important;
+    }
+
     .sidebar {
         margin-bottom: 1.2rem !important;
     }
@@ -679,6 +710,19 @@ section {
 }
 
 @media (max-width: 480px) {
+    .page__content p,
+    .page__content li {
+        font-size: 0.87rem !important;
+    }
+
+    .faculty-hero__lead {
+        font-size: 0.91rem !important;
+    }
+
+    .quick-links a {
+        font-size: 0.88rem !important;
+    }
+
     .sidebar .h-card {
         grid-template-columns: 96px minmax(0, 1fr) !important;
         column-gap: 0.8rem !important;
