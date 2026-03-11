@@ -1,55 +1,412 @@
 body {
-    font-size: 18px;
-    line-height: 1.5;
-    font-family: "Times New Roman", Times, serif;
+    color: #23303f;
+    background: #ffffff;
+    font-size: clamp(12.5px, 0.66vw, 13.5px);
+    line-height: 1.58;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.masthead {
+    display: none;
+}
+
+.page {
+    max-width: 1500px;
+}
+
+.page__content {
+    max-width: 980px;
+    padding-top: 0.35rem;
+}
+
+.page__content p,
+.page__content li {
+    font-size: clamp(0.74rem, 0.7rem + 0.12vw, 0.8rem);
+}
+
+.page__content a,
+.author__urls a {
+    color: #1f5f8b;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.14em;
+}
+
+.page__content a:hover,
+.author__urls a:hover {
+    color: #123d5b;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #1d2733;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: -0.02em;
 }
 
 h1 {
-    font-size: 28px;
+    margin: 0;
+    font-size: clamp(1.85rem, 1.45rem + 0.95vw, 2.15rem);
+    line-height: 1.1;
+    font-weight: 700;
 }
 
 h2 {
-    font-size: 24px;
+    margin: 0 0 1rem;
+    font-size: clamp(1.16rem, 1rem + 0.48vw, 1.3rem);
+    line-height: 1.18;
+    font-weight: 700;
 }
 
 p {
-    font-size: 18px;
+    margin: 0 0 0.68rem;
 }
 
-p {
-    margin: 1em 0; /* 默认可能是1em，减小它来减少段落间距 */
+ul,
+ol {
+    margin: 0.2rem 0 0.88rem 0.95rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 0.8em 0; /* 调整标题上下的间距 */
-}
-
-ul, li {
-    margin: 0.8em 0; /* 减少列表项之间的间距 */
-    padding-left: 10px;
+li {
+    margin: 0 0 0.28rem;
+    padding-left: 0.15rem;
 }
 
 section {
-    margin-bottom: 2em; /* 减少每个 section 底部的间距 */
+    margin-bottom: 1.65rem;
 }
 
-ul.compact-menu {
+.cv-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+}
+
+.cv-block {
+    padding: 0.95rem 1rem 0.85rem;
+    border: 1px solid #e5eaf0;
+    border-radius: 10px;
+    background: #fbfcfe;
+}
+
+.cv-block h2 {
+    margin-bottom: 0.8rem;
+}
+
+.cv-item + .cv-item {
+    margin-top: 0.75rem;
+    padding-top: 0.72rem;
+    border-top: 1px solid #e8edf2;
+}
+
+.cv-item__header {
     display: flex;
-    justify-content: flex-start;
-    padding: 0;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.8rem;
+    margin-bottom: 0.18rem;
+}
+
+.cv-item__header h3 {
     margin: 0;
-    list-style-type: none;
+    color: #203246;
+    font-size: 0.86rem;
+    font-weight: 700;
+    line-height: 1.3;
 }
 
-ul.compact-menu li {
-    margin-right: 15px; /* Space between items */
+.cv-item__header span {
+    color: #6c7d8e;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.68rem;
+    font-weight: 700;
+    white-space: nowrap;
 }
 
-ul.compact-menu li::after {
-    content: "|";
-    margin-left: 15px;
+.cv-item p {
+    margin: 0;
+    color: #4c5f72;
 }
 
-ul.compact-menu li:last-child::after {
+.keyword-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.42rem 0.46rem;
+}
+
+.keyword-list span {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.28rem 0.5rem;
+    border: 1px solid #dbe4ec;
+    border-radius: 999px;
+    background: #fafcfe;
+    color: #415769;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.68rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.faculty-hero {
+    margin: 0 0 1.3rem;
+    padding: 0 0 0.68rem;
+    border-bottom: 1px solid #d9e0e7;
+}
+
+.faculty-hero__eyebrow {
+    margin: 0 0 0.55rem;
+    color: #5d6f82;
+    font-size: clamp(0.58rem, 0.54rem + 0.12vw, 0.66rem);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.faculty-hero__lead {
+    max-width: 58rem;
+    margin: 0.55rem 0 0;
+    color: #314456;
+    font-size: clamp(0.78rem, 0.74rem + 0.12vw, 0.84rem);
+    line-height: 1.5;
+}
+
+.quick-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem 0.82rem;
+    margin: 0.62rem 0 0;
+    padding-top: 0.48rem;
+    border-top: 1px solid #e3e8ed;
+}
+
+.quick-links a {
+    color: #294f75;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: clamp(0.62rem, 0.59rem + 0.1vw, 0.68rem);
+    font-weight: 700;
+    letter-spacing: 0.005em;
+    text-decoration: none;
+}
+
+.quick-links a:hover {
+    color: #163856;
+    text-decoration: underline;
+}
+
+.sidebar {
+    padding-top: 0;
+}
+
+.sidebar.sticky {
+    top: 1.2rem;
+}
+
+.author__profile {
+    padding: 1rem 1rem 0.9rem;
+    border: 1px solid #e1e7ee;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #fbfdff 0%, #f7f9fc 100%);
+    box-shadow: 0 10px 24px rgba(21, 46, 74, 0.05);
+}
+
+.author__avatar {
+    margin-bottom: 0.62rem;
+}
+
+.author__avatar img {
+    border: 1px solid #d8e0e8;
+    box-shadow: 0 8px 20px rgba(18, 45, 74, 0.07);
+}
+
+.author__content {
+    padding-bottom: 0.26rem;
+    border-bottom: 1px solid #dde5ec;
+}
+
+.author__name {
+    margin-bottom: 0.4rem;
+    color: #1e2732;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: clamp(1rem, 0.9rem + 0.3vw, 1.12rem);
+    font-weight: 700;
+    line-height: 1.08;
+}
+
+.author__bio {
+    color: #556575;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: clamp(0.64rem, 0.61rem + 0.1vw, 0.7rem);
+    line-height: 1.36;
+}
+
+.author__urls-wrapper {
+    margin-top: 0.5rem;
+}
+
+.author__urls {
+    margin-top: 0.45rem;
+    padding-top: 0.2rem;
+}
+
+.author__urls li {
+    margin-bottom: 0.18rem;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: clamp(0.62rem, 0.59rem + 0.1vw, 0.68rem);
+    line-height: 1.3;
+}
+
+.author__urls .label {
+    color: #4c5c6d;
+}
+
+.author__urls .fas,
+.author__urls .fab {
+    width: 1.1rem;
+    margin-right: 0.24rem;
+    color: #5f7388;
+}
+
+.page__content section > h2 {
+    display: inline-block;
+    margin-bottom: 0.62rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid #cfd8e2;
+    letter-spacing: -0.015em;
+}
+
+.pub-group-title,
+.service-group-title {
+    margin: 0.35rem 0 0.5rem;
+    color: #596b7d;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.page__content section > ul {
+    margin-top: 0.15rem;
+}
+
+#research-news ul,
+#publications ul,
+#recent-awards ul,
+#teaching-experiences ul,
+#professional-services ul {
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+#publications ul li,
+#professional-services ul li,
+#research-news ul li {
+    margin-bottom: 0.48rem;
+    padding-left: 0;
+}
+
+#research-news ul li,
+#recent-awards ul li,
+#teaching-experiences ul li,
+#professional-services ul li {
+    position: relative;
+    padding-left: 1rem;
+}
+
+#research-news ul li::before,
+#recent-awards ul li::before,
+#teaching-experiences ul li::before,
+#professional-services ul li::before {
     content: "";
+    position: absolute;
+    left: 0;
+    top: 0.62em;
+    width: 0.34rem;
+    height: 0.34rem;
+    border-radius: 999px;
+    background: #b9c8d8;
+}
+
+#publications ul li {
+    padding: 0 0 0.72rem;
+    border-bottom: 1px solid #eef2f6;
+    line-height: 1.52;
+}
+
+#publications ul li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+#publications ul li > b:first-child {
+    display: inline-block;
+    margin-right: 0.42rem;
+    color: #173e63;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.72em;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+#publications ul li b {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+
+#publications ul li a {
+    color: #143e68;
+    font-weight: 500;
+}
+
+#publications ul li a:hover {
+    color: #0d2e4f;
+}
+
+#publications ul li b[style] {
+    color: #9d2d2d !important;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.88em;
+    font-weight: 700;
+}
+
+#research-news ul li b,
+#recent-awards ul li b {
+    color: #193d61;
+}
+
+@media (min-width: 80em) {
+    .sidebar {
+        opacity: 1;
+    }
+
+    .page {
+        column-gap: 2rem;
+    }
+}
+
+@media (max-width: 64em) {
+    .page__content {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .cv-grid {
+        grid-template-columns: 1fr;
+        gap: 0.9rem;
+    }
+
+    .faculty-hero {
+        margin-bottom: 1.1rem;
+    }
+
+    .quick-links {
+        gap: 0.28rem 0.58rem;
+    }
 }

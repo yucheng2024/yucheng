@@ -4,3 +4,6 @@ _site
 Gemfile.lock
 .bundle
 vendor
+.DS_Store
+ruby4_compat.rb
+_plugins
