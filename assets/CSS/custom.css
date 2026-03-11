@@ -134,21 +134,34 @@ section {
 .keyword-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.42rem 0.46rem;
+    gap: 0.48rem 0.52rem;
 }
 
+.keyword-list a,
 .keyword-list span {
     display: inline-flex;
     align-items: center;
-    padding: 0.28rem 0.5rem;
-    border: 1px solid #dbe4ec;
+    padding: 0.34rem 0.62rem;
+    border: 1px solid #d7e1ea;
     border-radius: 999px;
-    background: #fafcfe;
-    color: #415769;
+    background: #f8fbfe;
+    color: #38566f;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 0.68rem;
-    font-weight: 600;
+    font-size: 0.69rem;
+    font-weight: 700;
     line-height: 1.2;
+    text-decoration: none;
+    box-shadow: 0 1px 2px rgba(21, 46, 74, 0.04);
+    transition: background-color 120ms ease, border-color 120ms ease, color 120ms ease,
+        box-shadow 120ms ease, transform 120ms ease;
+}
+
+.keyword-list a:hover {
+    color: #163856;
+    background: #eef5fb;
+    border-color: #c3d5e5;
+    box-shadow: 0 4px 10px rgba(21, 46, 74, 0.08);
+    transform: translateY(-1px);
 }
 
 .faculty-hero {
@@ -178,24 +191,38 @@ section {
 .quick-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.3rem 0.82rem;
+    gap: 0.42rem 0.54rem;
     margin: 0.62rem 0 0;
     padding-top: 0.48rem;
     border-top: 1px solid #e3e8ed;
 }
 
 .quick-links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 1.95rem;
+    padding: 0.3rem 0.68rem;
+    border: 1px solid #d9e2eb;
+    border-radius: 999px;
+    background: #fafcfe;
     color: #294f75;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: clamp(0.72rem, 0.68rem + 0.14vw, 0.8rem);
+    font-size: clamp(0.68rem, 0.65rem + 0.1vw, 0.74rem);
     font-weight: 700;
     letter-spacing: 0.005em;
     text-decoration: none;
+    box-shadow: 0 1px 2px rgba(21, 46, 74, 0.04);
+    transition: background-color 120ms ease, border-color 120ms ease, color 120ms ease,
+        box-shadow 120ms ease, transform 120ms ease;
 }
 
 .quick-links a:hover {
     color: #163856;
-    text-decoration: underline;
+    background: #f1f6fb;
+    border-color: #c5d5e3;
+    box-shadow: 0 4px 10px rgba(21, 46, 74, 0.08);
+    transform: translateY(-1px);
+    text-decoration: none;
 }
 
 .sidebar {
@@ -287,12 +314,25 @@ section {
 .pub-group-title,
 .service-group-title {
     margin: 0.35rem 0 0.5rem;
-    color: #596b7d;
+    color: #284e73;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 0.72rem;
+    font-size: 0.77rem;
     font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    text-transform: none;
+}
+
+.pub-group-title {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    clear: both;
+    margin-top: 0.75rem;
+    padding: 0.2rem 0.55rem;
+    border-left: 3px solid #7ea6c7;
+    background: linear-gradient(90deg, #f3f8fc 0%, rgba(243, 248, 252, 0) 100%);
+    border-radius: 0 8px 8px 0;
+    scroll-margin-top: 1.2rem;
 }
 
 .page__content section > ul {
@@ -587,6 +627,10 @@ section {
         font-size: 0.75rem !important;
     }
 
+    .keyword-list a {
+        font-size: 0.75rem !important;
+    }
+
     .sidebar {
         margin-bottom: 1.2rem !important;
     }
@@ -721,6 +765,11 @@ section {
 
     .quick-links a {
         font-size: 0.88rem !important;
+    }
+
+    .keyword-list a,
+    .keyword-list span {
+        font-size: 0.77rem !important;
     }
 
     .sidebar .h-card {
